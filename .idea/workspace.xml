@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e116ffc2-d103-438e-98c0-67c6217be2c6" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1idKZXYpZvGw5sZjAXuSnq0mQqU" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/obrazky" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Zaloha\VŠ\3.ročník\VAII\SEMESTRALKA\obrazky" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e116ffc2-d103-438e-98c0-67c6217be2c6" name="Default Changelist" comment="" />
+      <created>1602232085219</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602232085219</updated>
+      <workItem from="1602232086260" duration="33337000" />
+      <workItem from="1602315611268" duration="36595000" />
+      <workItem from="1602413188238" duration="15236000" />
+      <workItem from="1602483055519" duration="2839000" />
+      <workItem from="1602485957302" duration="99000" />
+      <workItem from="1602568848128" duration="33000" />
+      <workItem from="1603107944010" duration="8044000" />
+      <workItem from="1603174096854" duration="2397000" />
+      <workItem from="1603182867559" duration="3838000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="395" y="90" key="#Inspections" timestamp="1602319894207">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="395" y="90" key="#Inspections/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1602319894207" />
+    <state x="361" y="70" width="814" height="729" key="#Intentions" timestamp="1602254542904">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="70" width="814" height="729" key="#Intentions/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1602254542904" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602351287265">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1602351287265" />
+    <state x="549" y="153" key="FileChooserDialogImpl" timestamp="1603185639297">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1603185639297" />
+    <state x="-1093" y="417" key="Github.ShareDialog" timestamp="1603186708629">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1093" y="417" key="Github.ShareDialog/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1603186708629" />
+  </component>
+</project>

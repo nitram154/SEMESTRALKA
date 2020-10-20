@@ -1,0 +1,62 @@
+li{
+    display: inline-block;
+    position: relative;
+    padding: 13px;
+}
+
+li a {
+    text-decoration: none;
+    color: orange;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.Menu{
+    top:0;
+    left: 0;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    background-color: #131212;
+    text-align: center;
+    padding-left: 0;
+    z-index: 1;
+}
+
+li:hover{
+    background:rgba(193, 243, 122, 0.7);
+    transition: 1s;
+    text-transform: uppercase;
+}
+
+body{
+    background-color: #fff4d5;
+}
+
+li:hover ul {
+    display: block;
+    padding-top:14px;
+    left:0;
+    padding-left: 0;
+}
+
+li ul li{
+    display: block;
+    position: relative;
+}
+
+li ul{
+    display: none;
+    position: absolute;
+    background:#131212;
+}
+
+@media only screen and (max-width: 700px) {
+
+    li:hover{
+        text-transform: none;
+    }
+}
+
+
+
