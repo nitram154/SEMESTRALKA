@@ -31,12 +31,7 @@ h1{
     justify-content: space-around;
 }
 
-.atrakciee{
-    font-size: 35px;
-    font-family: "Comic Sans MS", serif;
-    text-align: center;
-    font-weight: bold;
-}
+
 .dane{
     margin-left: 50%;
     text-align: center;
@@ -51,10 +46,10 @@ h1{
 @media only screen and (max-width: 1000px) {
 
     h1{
-        font-size: 45px;
+        font-size: 30px;
     }
-    .dane{
-        font-size: 25px;
+    .daneText{
+        font-size: 20px;
     }
 }
 @media only screen and (max-width: 850px) {
@@ -73,7 +68,11 @@ h1{
     .text{
         font-size: 30px;
     }
-    .dane{
-        font-size: 20px;
+    .text{
+        font-size: 25px;
     }
+    .popis{
+        font-size: 10px;
+    }
+
 }

@@ -74,9 +74,11 @@ th, td{
 
     .obrazky{
         display: block;
+        margin-top: 1em;
     }
     .columnprvy, .columndruhy, .columntreti {
         width: 100%;
         margin-bottom: 2em;
     }
+
 }

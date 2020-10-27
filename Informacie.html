@@ -5,6 +5,8 @@
     <title>Informacie</title>
     <link href="MenuBar.css" rel="stylesheet">
     <link href="Informacie.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
     <body>
         <ul class="Menu">
@@ -42,6 +44,35 @@
             </li>
 
         </ul>
+        <div class="mobile-container">
+
+            <!-- Top Navigation Menu -->
+            <div class="topnav">
+                <a class="active"></a>
+                <div id="myLinks">
+                    <a href="Informacie.html">Informácie</a>
+                    <a href="Rezervacia.html">Rezervácie</a>
+                    <a href="Kontakt.html">Kontakt</a>
+                    <a href="Vnutorne.html">Vnútorné atrakcie</a>
+                    <a href="Vonkajsie.html">Vonkajšie atrakcie</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <!-- End smartphone / tablet look -->
+        </div>
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
+        </script>
         <div>
             <img class="informaciefoto" src="./obrazky/informaciefoto.jpg" alt="Chata">
         </div>
@@ -76,7 +107,7 @@
             </div>
         </div>
         <div class="dane">
-            <h3>Prispejte nám svojimi 2% z daní, aby sme mohli byť ešte lepší.</h3>
+            <h3 class="daneText">Prispejte nám svojimi 2% z daní, aby sme mohli byť ešte lepší.</h3>
         </div>
     </body>
 </html>
