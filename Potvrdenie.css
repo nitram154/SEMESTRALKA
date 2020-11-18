@@ -1,0 +1,26 @@
+.kontajnerPotvrdenie{
+    display: flex;
+    justify-content: center;
+    background-color: #8be76d;
+    border: 5px solid black;
+    border-radius: 50px;
+    margin-top: 5%;
+    padding: 3%;
+
+
+
+}
+.potvrdenieObjednavky{
+    font-size: 20px;
+
+}
+.potvrdit{
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    border: 2px solid black;
+    color: black;
+    background-color: white;
+    padding: 5px;
+}
+
