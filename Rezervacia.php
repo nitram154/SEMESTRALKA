@@ -14,14 +14,21 @@
 
 
 <?php
-    require "DBStorage.php";
-    require "Atrakcie.php";
+require "DBStorage.php";
+require "Atrakcie.php";
+require "formular.php";
 
-    $storage = new DBStorage();
+$storage = new DBStorage();
 
-    if (isset($_POST['fname'] ,$_POST['lname'],$_POST['atrakcie'],$_POST['Datum'],$_POST['cas'],$_POST['TelCislo'])){
-        $storage->Save(new Atrakcie($_POST['fname'] ,$_POST['lname'],$_POST['atrakcie'],$_POST['Datum'],$_POST['cas'],$_POST['TelCislo']));
-    }
+
+if (isset($_POST['fname'], $_POST['lname'], $_POST['atrakcie'], $_POST['Datum'], $_POST['cas'], $_POST['TelCislo'])) {
+
+    $storage->Save(new Atrakcie($_POST['fname'], $_POST['lname'], $_POST['atrakcie'], $_POST['Datum'], $_POST['cas'], $_POST['TelCislo'], $_GET['id']));
+}
+
+if (isset($_POST['id'])) {
+    $storage->Remove($_POST['id']);
+}
 
 ?>
 <ul class="Menu">
@@ -67,7 +74,7 @@
         <div id="myLinks">
             <a href="Informacie.html">Informácie</a>
             <a href="Rezervacia.php">Rezervácie</a>
-            <a href="kontakt.html">kontakt</a>
+            <a href="Kontakt.html">kontakt</a>
             <a href="Vnutorne.html">Vnútorné atrakcie</a>
             <a href="Vonkajsie.html">Vonkajšie atrakcie</a>
         </div>
@@ -88,47 +95,26 @@
         }
     }
 </script>
-<div class="kontajnerObsah">
-    <div class="kontajnerRezerve">
 
-        <form class="rezerve" method="post" >
 
-            <label for="fname">Meno</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="lname">Priezvisko</label><br>
-            <input type="text" id="lname" name="lname"><br><br>
+<?php formular();?>
 
-            <label for="atrakcie">Vyberte atrakciu: </label><br>
-            <select name="atrakcie" id="atrakcie">
-                <optgroup label="Vnútorné">
-                    <option value="Volejbal">Volejbal</option>
-                    <option value="Bedminton">Bedminton</option>
-                    <option value="TenisDnu">Tenis</option>
-                    <option value="Squash">Squash</option>
-                    <option value="Lezenie">Lezecká stena</option>
-                </optgroup>
-                <optgroup label="Vonkajšie">
-                    <option value="TenisVon">Tenis</option>
-                    <option value="Beach">Beach ihrisko</option>
-                </optgroup>
-            </select>
-            <br><br>
-            <label for="Datum">Vyberte dátum:</label><br>
-            <input type="date" id="Datum" name="Datum"><br><br>
-            <label for="cas">Vyberte čas:</label><br>
-            <input type="time" id="cas" name="cas"><br><br>
 
-            <label for="TelCislo">Telefónne číslo:</label><br>
-            <input type="tel" id="TelCislo" name="TelCislo" placeholder="09YYXXXXXX" pattern="09[0-9]{8}"><br><br>
-            <input type="submit" value="Rezervovať" class="odoslanie">
 
+<?php foreach ($storage->LoadAll() as $Atrakcie) { ?>
+    <div>
+        <?php echo $Atrakcie->getFname(), " ", $Atrakcie->getLname(), " ", $Atrakcie->getAtrakcie(), " ", $Atrakcie->getDatum(), " ", $Atrakcie->getCas(), " ", $Atrakcie->getTelCislo() ?>
+        <form method="post" action="upravit.php?id=<?php echo $Atrakcie->getId() ?>">
+<!--            <input type="text" name="upravit" value="--><?php //echo $Atrakcie->getId() ?><!--">-->
+            <button value="Submit" type="submit">Upravit</button>
+        </form>
+        <form method="post">
+            <input type="hidden" name="id" value="<?php echo $Atrakcie->getId() ?>">
+            <button value="Submit" type="submit">Zmazat</button>
         </form>
 
     </div>
-</div>
-
-
-
+<?php } ?>
 
 </body>
 </html>

@@ -5,6 +5,7 @@ class Atrakcie{
     private $lname;
     private $atrakcie;
     private $Datum;
+    private $id;
 
     /**
      * Atrakcie constructor.
@@ -15,7 +16,7 @@ class Atrakcie{
      * @param $cas
      * @param $TelCislo
      */
-    public function __construct($fname, $lname, $atrakcie, $Datum, $cas, $TelCislo)
+    public function __construct($fname, $lname, $atrakcie, $Datum, $cas, $TelCislo,$id)
     {
         $this->fname = $fname;
         $this->lname = $lname;
@@ -23,6 +24,15 @@ class Atrakcie{
         $this->Datum = $Datum;
         $this->cas = $cas;
         $this->TelCislo = $TelCislo;
+        $this->id = $id;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getId()
+    {
+        return $this->id;
     }
 
     /**
