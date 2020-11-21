@@ -97,22 +97,28 @@ if (isset($_POST['id'])) {
 </script>
 
 
-<?php formular();?>
-
-
+<?php formular(); ?>
 
 <?php foreach ($storage->LoadAll() as $Atrakcie) { ?>
-    <div>
-        <?php echo $Atrakcie->getFname(), " ", $Atrakcie->getLname(), " ", $Atrakcie->getAtrakcie(), " ", $Atrakcie->getDatum(), " ", $Atrakcie->getCas(), " ", $Atrakcie->getTelCislo() ?>
-        <form method="post" action="upravit.php?id=<?php echo $Atrakcie->getId() ?>">
-<!--            <input type="text" name="upravit" value="--><?php //echo $Atrakcie->getId() ?><!--">-->
-            <button value="Submit" type="submit">Upravit</button>
-        </form>
-        <form method="post">
-            <input type="hidden" name="id" value="<?php echo $Atrakcie->getId() ?>">
-            <button value="Submit" type="submit">Zmazat</button>
-        </form>
-
+    <div class="kontajnerNacitanie">
+        <div class="nacitanie">
+            <div class="tlacidla">
+                <?php echo $Atrakcie->getFname(), " ", $Atrakcie->getLname(), " ", $Atrakcie->getAtrakcie(), " ", $Atrakcie->getDatum(), " ", $Atrakcie->getCas(), " ", $Atrakcie->getTelCislo() ?>
+            </div>
+            <div class="prvavaTlacidla">
+                <div class="tlacidla">
+                    <form method="post" action="upravit.php?id=<?php echo $Atrakcie->getId() ?>">
+                        <button  class="cssTlacidla cssUprav" value="Submit" type="submit">Upravit</button>
+                    </form>
+                </div>
+                <div class="tlacidla">
+                    <form method="post">
+                        <input type="hidden" name="id" value="<?php echo $Atrakcie->getId() ?>">
+                        <button class="cssTlacidla cssZmaz" value="Submit" type="submit">Zmazat</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 <?php } ?>
 

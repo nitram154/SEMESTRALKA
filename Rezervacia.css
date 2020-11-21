@@ -33,3 +33,38 @@ h1{
     margin-top: 10%;
 }
 
+.kontajnerNacitanie{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+
+}
+.nacitanie{
+    width: 43.5%;
+    text-align: left;
+    font-weight: bold;
+    background-color: #e4f0f8;
+    border: 3px solid greenyellow;
+}
+.tlacidla{
+    display: inline-block;
+
+}
+.prvavaTlacidla{
+    text-align: right;
+    padding-left: 2%;
+}
+.cssTlacidla{
+    background-color: unset;
+    border: unset;
+    font-weight: bold;
+    cursor: pointer;
+}
+.cssZmaz{
+    color: red;
+}
+
+.cssUprav{
+    color: blue;
+}
+
