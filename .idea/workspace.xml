@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e116ffc2-d103-438e-98c0-67c6217be2c6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DBStorage.php" beforeDir="false" afterPath="$PROJECT_DIR$/DBStorage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rezervacia.css" beforeDir="false" afterPath="$PROJECT_DIR$/Rezervacia.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rezervacia.php" beforeDir="false" afterPath="$PROJECT_DIR$/Rezervacia.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/formular.php" beforeDir="false" afterPath="$PROJECT_DIR$/formular.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upravit.php" beforeDir="false" afterPath="$PROJECT_DIR$/upravit.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +86,8 @@
       <workItem from="1605802828059" duration="7943000" />
       <workItem from="1605864493914" duration="4482000" />
       <workItem from="1605885960415" duration="16696000" />
-      <workItem from="1605952329264" duration="5324000" />
+      <workItem from="1605952329264" duration="5349000" />
+      <workItem from="1606160623471" duration="573000" />
     </task>
     <task id="LOCAL-00001" summary="Verzia 1">
       <created>1603186867716</created>
@@ -134,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605908390557</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Verzia 5">
+      <created>1605968391933</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1605968391933</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,12 +188,12 @@
     </state>
     <state x="-1296" y="201" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1605445682674" />
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1602351287265" />
-    <state x="468" y="0" key="CommitChangelistDialog2" timestamp="1605908389486">
+    <state x="468" y="0" key="CommitChangelistDialog2" timestamp="1605968390724">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="-1335" y="97" key="CommitChangelistDialog2/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1603187048697" />
     <state x="468" y="0" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605718580987" />
-    <state x="468" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1605908389486" />
+    <state x="468" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1605968390724" />
     <state x="-674" y="179" width="440" height="630" key="FileChooserDialogImpl" timestamp="1605439788565">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
@@ -257,12 +261,12 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="529" height="446" key="SwitcherDM/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605359041928" />
-    <state x="442" y="200" key="Vcs.Push.Dialog.v2" timestamp="1605908393322">
+    <state x="442" y="200" key="Vcs.Push.Dialog.v2" timestamp="1605968398057">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="-1368" y="252" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1603187051657" />
     <state x="442" y="200" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605718589469" />
-    <state x="442" y="200" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1605908393322" />
+    <state x="442" y="200" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1605968398057" />
     <state x="668" y="289" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1605346442668">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -275,10 +279,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="349" y="67" key="com.intellij.database.dbimport.ImportDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605347803217" />
-    <state x="499" y="217" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog" timestamp="1605347800969">
+    <state x="499" y="217" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog" timestamp="1606160667183">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="217" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605347800969" />
+    <state x="499" y="217" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog/0.0.1536.824@0.0.1536.824" timestamp="1606160667183" />
     <state x="-1212" y="293" width="504" height="445" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1605438908074">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>

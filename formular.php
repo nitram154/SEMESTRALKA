@@ -38,8 +38,8 @@ function formular($id = 0, $fname = "", $lname = "", $atrakcie = "", $datum = ""
                             <option value="Bedminton" selected>Bedminton</option> <?php } else { ?>
                             <option value="Bedminton">Bedminton</option><?php } ?>
                         <?php if ($atrakcie == "TenisDnu") { ?>
-                            <option value="TenisDnu" selected>TenisDnu</option> <?php } else { ?>
-                            <option value="TenisDnu">TenisDnu</option><?php } ?>
+                            <option value="TenisDnu" selected>Tenis</option> <?php } else { ?>
+                            <option value="TenisDnu">Tenis</option><?php } ?>
                         <?php if ($atrakcie == "Squash") { ?>
                             <option value="Squash" selected>Squash</option> <?php } else { ?>
                             <option value="Squash">Squash</option><?php } ?>
