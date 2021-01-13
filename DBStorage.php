@@ -18,6 +18,14 @@ class DBStorage
         header('Location: http://localhost:63342/SEMESTRALKA/Rezervacia.php');
     }
 
+    public function SaveMsg(Spravy $param)
+    {
+        $statement = $this->pdo->prepare("INSERT INTO spravy (meno, email, text) value (?,?,?)");
+        $statement->execute([$param->getMeno(), $param->getEmail(), $param->getText()]);
+
+        //header('Location: http://localhost:63342/SEMESTRALKA/Rezervacia.php');
+    }
+
     public function LoadAll()
     {
         $result = [];

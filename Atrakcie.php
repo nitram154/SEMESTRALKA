@@ -6,6 +6,8 @@ class Atrakcie{
     private $atrakcie;
     private $Datum;
     private $id;
+    private $cas;
+    private $TelCislo;
 
     /**
      * Atrakcie constructor.
@@ -130,6 +132,5 @@ class Atrakcie{
     {
         $this->TelCislo = $TelCislo;
     }
-    private $cas;
-    private $TelCislo;
+
 }

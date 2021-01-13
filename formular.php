@@ -1,4 +1,4 @@
-<?php
+<?php include_once "MenuBar.php";
 
 function formular($id = 0, $fname = "", $lname = "", $atrakcie = "", $datum = "", $cas = "", $tel = "")
 { ?>
@@ -7,15 +7,7 @@ function formular($id = 0, $fname = "", $lname = "", $atrakcie = "", $datum = ""
 
         $storage->Update($_POST['fname'], $_POST['lname'], $_POST['atrakcie'], $_POST['Datum'], $_POST['cas'], $_POST['TelCislo'], $_POST['id']);
     } ?>
-    <head>
-        <meta charset="UTF-8">
-        <title>Rezervacia</title>
-        <link href="MenuBar.css" rel="stylesheet">
-        <link href="Rezervacia.css" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet"
-              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
+
     <div class="kontajnerObsah">
         <div class="kontajnerRezerve">
             <form class="rezerve" method="post">

@@ -1,0 +1,531 @@
+/* MenuBar */
+li{
+    display: inline-block;
+    position: relative;
+    padding: 13px;
+}
+
+li a {
+    text-decoration: none;
+    color: orange;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.Menu{
+    top:0;
+    left: 0;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    background-color: #131212;
+    text-align: center;
+    padding-left: 0;
+    z-index: 1;
+}
+
+li:hover{
+    background:rgba(193, 243, 122, 0.7);
+    transition: 1s;
+    text-transform: uppercase;
+}
+
+body{
+    background-color: #fff4d5;
+}
+
+li:hover ul {
+    display: block;
+    padding-top:14px;
+    left:0;
+    padding-left: 0;
+}
+
+li ul li{
+    display: block;
+    position: relative;
+}
+
+li ul{
+    display: none;
+    position: absolute;
+    background:#131212;
+}
+
+.mobile-container{
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .Menu{
+        visibility: hidden;
+    }
+
+    .mobile-container {
+        max-width: 480px;
+        margin: auto;
+        background-color: #555;
+        height: 500px;
+        color: white;
+        border-radius: 10px;
+        display: unset;
+    }
+
+    .topnav {
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+    }
+
+    .topnav #myLinks {
+        display: none;
+    }
+
+    .topnav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+        height: 20px;
+    }
+
+    .topnav a.icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+/* Informacie */
+
+.informaciefoto{
+    width: 100%;
+}
+.fajka{
+    width: 40px;
+}
+.informacieNadpis{
+    color: forestgreen;
+    font-size: 60px;
+    font-family: "Comic Sans MS", serif;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+.informaciePopis{
+    font-family: "Comic Sans MS", serif;
+    text-align: justify;
+    width: 45%;
+}
+.informacieText{
+    font-size: 35px;
+    font-weight: bold;
+    padding: 5px;
+    margin-top: 20px;
+}
+.kontajner{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.dane{
+    margin-left: 50%;
+    text-align: center;
+    background-color: black;
+    height: 60px;
+    width: 100%;
+    color: whitesmoke;
+    font-size: 30px;
+    transform: translate(-50%, 50%);
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .informacieNadpis{
+        font-size: 30px;
+    }
+    .daneText{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 850px) {
+
+    .kontajner{
+        display: block;
+    }
+    .informaciePopis{
+        width: 80%;
+        margin-left: 10%;
+        font-size: 10px;
+    }
+    .ponuka{
+        margin-left: 10%;
+    }
+    .informacieText{
+        font-size: 25px;
+    }
+
+}
+
+/* Kontakty */
+
+.kontakty{
+    height: 10%;
+    background-color: darkorange;
+    font-family: "Comic Sans MS",serif;
+    font-weight: bold;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    line-height: 50px;
+    border-radius: 40px;
+    margin-top: 2%;
+    padding: 50px;
+
+}
+.kontaktyNadpis{
+    margin: 0;
+    position: absolute;
+    font-size: 50px;
+}
+
+.hodiny_border{
+
+    background-color: lightseagreen;
+    width: 50%;
+    margin: auto;
+    margin-top: 2%;
+    border-radius: 40px;
+
+}
+.kontaktHodiny{
+    font-family: "Comic Sans MS",serif;
+    font-weight: bold;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.kontaktTextLabel {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: none;
+}
+
+.btnOdoslat {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.kontaktyKontainer {
+    width: 30%;
+}
+.obalovac{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 7%;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .obalovac{
+        display: block;
+    }
+    .kontakty {
+        width: 100%;
+        border-radius: 0;
+        font-size: 20px;
+        justify-content: center;
+        padding: 0;
+        margin-top: 15%;
+    }
+    .kontaktyNadpis{
+        font-size: 30px;
+    }
+    .hodiny_border{
+        width: 100%;
+        border-radius: 0;
+        font-size: 15px;
+    }
+    .kontaktyKontainer{
+        width: 100%;
+    }
+}
+ /* Rezervacie */
+
+.rezerve{
+    font-family: "Comic Sans MS", serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.kontajnerObsah{
+    display: flex;
+    justify-content: center;
+}
+.kontajnerRezerve{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    background-color: #e4f0f8;
+    width: 40%;
+    padding: 20px;
+    border: 10px solid greenyellow;
+}
+input, select{
+    border: 3px solid black;
+}
+.odoslanie{
+
+    background-color: greenyellow;
+    font-family: "Comic Sans MS", serif;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.kontajnerNacitanie{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+
+}
+.nacitanie{
+    width: 43.5%;
+    text-align: left;
+    font-weight: bold;
+    background-color: #e4f0f8;
+    border: 3px solid greenyellow;
+}
+.tlacidla{
+    display: inline-block;
+
+}
+.prvavaTlacidla{
+    text-align: right;
+    padding-left: 2%;
+}
+.cssTlacidla{
+    background-color: unset;
+    border: unset;
+    font-weight: bold;
+    cursor: pointer;
+}
+.cssZmaz{
+    color: red;
+}
+
+.cssUprav{
+    color: blue;
+}
+
+/* Vnutorne */
+
+.hala{
+    width: 90%;
+    height: auto;
+    margin-top: 2em;
+}
+
+.obrazky{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5em;
+}
+
+
+
+.columnprvy, .columndruhy, .columntreti {
+    width: 30%;
+    text-align: center;
+    border-radius: 15px;
+
+}
+
+.columnprvy{
+    background-color: #90e905;
+}
+
+.columndruhy{
+    background-color: yellow;
+}
+
+.columntreti{
+    background-color: deepskyblue;
+}
+
+.vnutorneNadpis{
+    text-align: center;
+    font-family: "Comic Sans MS", serif;
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.vnutorneTabulka{
+    border: 1px solid black;
+    font-weight: bold;
+    width: 25%;
+    height: 40px;
+    text-align: center;
+}
+
+.cenalezenie{
+    margin: auto;
+}
+
+.cenasqash{
+    margin: auto;
+}
+
+.cenahala{
+    margin: auto;
+}
+.vnutornePoznamka{
+    text-align: center;
+    font-weight: bold;
+    font-family: "Comic Sans MS", serif;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .obrazky{
+        display: block;
+        margin-top: 1em;
+    }
+    .columnprvy, .columndruhy, .columntreti {
+        width: 100%;
+        margin-bottom: 2em;
+    }
+
+}
+
+/* Vonkajsie */
+
+.sitetext{
+    margin: auto;
+}
+.vonkajsieatrakcie{
+    margin-top: 5em;
+}
+
+.rowprvy, .rowdruhy, .rowtreti{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+}
+.rowprvy{
+    background-color: orange;
+}
+
+.rowdruhy{
+    background-color: mediumpurple;
+}
+
+.rowtreti{
+    background-color: aquamarine;
+}
+
+.obrleft{
+    width: 30%;
+    height: auto;
+    padding: 20px;
+}
+
+.obrright{
+    width: 30%;
+    height: auto;
+    padding: 20px;
+}
+
+.obrdown{
+    width: 30%;
+    height: auto;
+    padding: 20px;
+}
+
+.beach{
+    text-align: center;
+    font-family: "Comic Sans MS", serif;
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.draha{
+    text-align: center;
+    font-family: "Comic Sans MS",serif;
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: underline;
+}
+.tenis{
+    text-align: center;
+    font-family: "Comic Sans MS", serif;
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.textbeach{
+    width: 100%;
+    font-size: 30px;
+    font-family: "Comic Sans MS", serif;
+    text-align: center;
+}
+.textopica{
+    width: 100%;
+    font-size: 30px;
+    font-family: "Comic Sans MS", serif;
+    text-align: center;
+}
+
+.texttenis{
+    width: 100%;
+    font-size: 30px;
+    font-family: "Comic Sans MS", serif;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1050px) {
+
+    .rowprvy, .rowdruhy, .rowtreti{
+        display: block;
+        text-align: center;
+        width: 100%;
+        border-radius: 20px;
+    }
+    .obrdown, .obrright, .obrleft{
+        width: 60%;
+    }
+
+    .vonkajsieatrakcie{
+        margin-top: 0;
+    }
+    .beach, .draha, .tenis, .texttenis, .textopica, .textbeach{
+        font-size: 20px;
+    }
+
+}
