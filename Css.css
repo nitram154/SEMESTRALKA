@@ -31,7 +31,7 @@ li:hover{
 }
 
 body{
-    background-color: #fff4d5;
+    background-color: #f8f2e3;
 }
 
 li:hover ul {
@@ -341,6 +341,28 @@ input, select{
     color: blue;
 }
 
+.prihlasenieNeprihlasenyKontajner{
+    display: flex;
+    justify-content: center;
+
+    margin-top: 15em;
+
+
+}
+
+.prihlasenieNeprihlaseny{
+    display: block;
+    width: 50%;
+    background-color: rgba(255, 140, 0, 0.4);
+    border: 5px solid black;
+    border-radius: 20px;
+    font-weight: bold;
+    color: #131212;
+    text-align: center;
+    font-size: 25px;
+}
+
+
 /* Vnutorne */
 
 .hala{
@@ -528,4 +550,65 @@ input, select{
         font-size: 20px;
     }
 
+}
+
+
+/* Prihlasenie */
+
+.input-container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.icon {
+    padding: 10px;
+    background: black;
+    color: darkorange;
+    min-width: 50px;
+    text-align: center;
+}
+
+.input-field {
+    width: 90%;
+    padding: 10px;
+    outline: none;
+}
+
+.input-field:focus {
+    border: 2px solid black;
+}
+
+.btn {
+    background-color: black;
+    color: darkorange;
+    padding: 15px;
+    margin-top: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 90%;
+    border: solid white 3px;
+}
+
+.prihlasenieKontajner{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10em;
+}
+
+.prihlasenieForm{
+    margin-top: auto;
+    width: 40%;
+}
+.prihlasenieObr{
+    width: 500px;
+    height: 350px;
+ }
+.prihlasenieBackround{
+
+    padding: 30px;
+    /*background-color: rgb(242, 250, 47);*/
+    background-color: rgba(255, 140, 0, 0.4);
+    border-radius: 20px;
+    border: solid black 5px;
 }

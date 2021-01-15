@@ -1,3 +1,9 @@
+<?php
+
+require "functions.php";
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,18 +15,18 @@
 </head>
 <body>
 <ul class="Menu">
-    <li >
-        <a href="Informacie.php" >
+    <li>
+        <a href="Informacie.php">
             Informacie
         </a>
     </li>
     <li>
-        <a href="Rezervacia.php" >
+        <a href="Rezervacia.php">
             Rezervacie
         </a>
     </li>
     <li>
-        <a href="Kontakt.php" >
+        <a href="Kontakt.php">
             Kontakt
         </a>
     </li>
@@ -30,16 +36,21 @@
         </a>
         <ul>
             <li>
-                <a href="Vnutorne.php" >
+                <a href="Vnutorne.php">
                     Vnútorné
                 </a>
             </li>
             <li>
-                <a href="Vonkajsie.php" >
+                <a href="Vonkajsie.php">
                     Vonkajšie
                 </a>
             </li>
         </ul>
+    </li>
+    <li>
+        <a href="odhlasenie.php">
+            <i class = "fa fa-power-off"></i>
+        </a>
     </li>
 </ul>
 <div class="mobile-container">
@@ -70,5 +81,14 @@
             x.style.display = "block";
         }
     }
+</script>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+    $(function() {
+        $(".submit-btn").click(function() {
+            $(this).val('Odhlasit');
+        });
+    });
 </script>
 

@@ -1,16 +1,17 @@
 <?php include_once "MenuBar.php";
+session_start();
 
 function formular($id = 0, $fname = "", $lname = "", $atrakcie = "", $datum = "", $cas = "", $tel = "")
 { ?>
     <?php $storage = new DBStorage();
     if (isset($_POST['fname'], $_POST['lname'], $_POST['atrakcie'], $_POST['Datum'], $_POST['cas'], $_POST['TelCislo'])) {
 
-        $storage->Update($_POST['fname'], $_POST['lname'], $_POST['atrakcie'], $_POST['Datum'], $_POST['cas'], $_POST['TelCislo'], $_POST['id']);
+        $storage->Update($_POST['id'],$_POST['fname'], $_POST['lname'], $_POST['atrakcie'], $_POST['Datum'], $_POST['cas'], $_POST['TelCislo']);
     } ?>
 
     <div class="kontajnerObsah">
         <div class="kontajnerRezerve">
-            <form class="rezerve" method="post">
+            <form class="rezerve" method="post" >
                 <input type="hidden" id="id" name="id" value="<?php echo $id ?>"><br>
                 <label for="fname">Meno</label><br>
 

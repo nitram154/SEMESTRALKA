@@ -8,6 +8,7 @@ class Atrakcie{
     private $id;
     private $cas;
     private $TelCislo;
+    private $emailUserFK;
 
     /**
      * Atrakcie constructor.
@@ -15,19 +16,39 @@ class Atrakcie{
      * @param $lname
      * @param $atrakcie
      * @param $Datum
+     * @param $id
      * @param $cas
      * @param $TelCislo
+     * @param $emailUserFK
      */
-    public function __construct($fname, $lname, $atrakcie, $Datum, $cas, $TelCislo,$id)
+    public function __construct($id,$fname, $lname, $atrakcie, $Datum,  $cas, $TelCislo, $emailUserFK)
     {
         $this->fname = $fname;
         $this->lname = $lname;
         $this->atrakcie = $atrakcie;
         $this->Datum = $Datum;
+        $this->id = $id;
         $this->cas = $cas;
         $this->TelCislo = $TelCislo;
-        $this->id = $id;
+        $this->emailUserFK = $emailUserFK;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getEmailUserFK()
+    {
+        return $this->emailUserFK;
+    }
+
+    /**
+     * @param mixed $emailUserFK
+     */
+    public function setEmailUserFK($emailUserFK): void
+    {
+        $this->emailUserFK = $emailUserFK;
+    }
+
 
     /**
      * @return mixed
