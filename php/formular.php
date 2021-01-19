@@ -7,6 +7,11 @@ function formular($id = 0, $fname = "", $lname = "", $atrakcie = "", $datum = ""
     if (isset($_POST['fname'], $_POST['lname'], $_POST['atrakcie'], $_POST['Datum'], $_POST['cas'], $_POST['TelCislo'])) {
 
         $storage->Update($_POST['id'],$_POST['fname'], $_POST['lname'], $_POST['atrakcie'], $_POST['Datum'], $_POST['cas'], $_POST['TelCislo']);
+        echo '<script type="text/javascript">';
+        echo 'window.location.href = "../phpWebSite/Rezervacia.php";';
+        echo 'alert("Ďakujeme za vašu rezerváciu!");';
+        echo '</script>';
+
     } ?>
 
     <div class="kontajnerObsah">
@@ -15,14 +20,14 @@ function formular($id = 0, $fname = "", $lname = "", $atrakcie = "", $datum = ""
                 <input type="hidden" id="id" name="id" value="<?php echo $id ?>"><br>
                 <label for="fname">Meno</label><br>
 
-                <input type="text" id="fname" name="fname" value="<?php echo $fname ?>" required><br>
+                <input type="text" class="input-fieldRez" id="fname" name="fname" value="<?php echo $fname ?>" required><br> <br>
 
 
                 <label for="lname">Priezvisko</label><br>
-                <input type="text" id="lname" name="lname" value="<?php echo $lname ?>" required><br><br>
+                <input type="text" class="input-fieldRez" id="lname" name="lname" value="<?php echo $lname ?>" required><br><br>
 
                 <label for="atrakcie">Vyberte atrakciu: </label><br>
-                <select name="atrakcie" id="atrakcie">
+                <select name="atrakcie" id="atrakcie" class="input-fieldRez" >
                     <optgroup label="Vnútorné">
                         <?php if ($atrakcie == "Volejbal") { ?>
                             <option value="Volejbal" selected>Volejbal</option> <?php } else { ?>
@@ -51,15 +56,15 @@ function formular($id = 0, $fname = "", $lname = "", $atrakcie = "", $datum = ""
                 </select>
                 <br><br>
                 <label for="Datum">Vyberte dátum:</label><br>
-                <input type="date" id="Datum" name="Datum" min="<?php echo date("Y-m-d") ?>"
+                <input type="date" class="input-fieldRez" id="Datum" name="Datum" min="<?php echo date("Y-m-d") ?>"
                        value="<?php echo $datum ?>" required><br><br>
 
                 <label for="cas">Vyberte čas:</label><br>
-                <input type="time" id="cas" name="cas" min="08:00" max="21:00" value="<?php echo $cas ?>" required><br><br>
+                <input type="time" class="input-fieldRez" id="cas" name="cas" min="08:00" max="21:00" value="<?php echo $cas ?>" required><br><br>
 
                 <label for="TelCislo">Telefónne číslo:</label><br>
-                <input type="tel" id="TelCislo" name="TelCislo" placeholder="09YYXXXXXX" pattern="09[0-9]{8}"
-                       value="<?php echo $tel ?>" required><br><br>
+                <input type="tel" class="input-fieldRez" id="TelCislo" name="TelCislo" placeholder="09YYXXXXXX" pattern="09[0-9]{8}"
+                       value="<?php echo $tel ?>" required><br> <br>
                 <input type="submit" id="submitRezervation" value="Rezervovať" class="odoslanie">
 
 

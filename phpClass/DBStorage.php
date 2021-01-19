@@ -57,7 +57,7 @@ class DBStorage
 
         $this->pdo->query("UPDATE atrakcie SET fname='$name', lname='$lname', atrakcie='$atrakcie', Datum='$datum', cas='$cas', TelCislo='$tel' WHERE id=$id");
 
-        header('Location: http://localhost:63342/SEMESTRALKA/phpWebSite/Rezervacia.php');
+        //header('Location: http://localhost:63342/SEMESTRALKA/phpWebSite/Rezervacia.php');
 
     }
 

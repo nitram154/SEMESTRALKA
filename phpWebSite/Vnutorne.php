@@ -1,8 +1,8 @@
 <?php include_once "MenuBar.php" ?>
         <div class="obrazky">
             <div class="columnprvy">
-                <img class="hala" src="../obrazky/hala.png" alt="Nature" >
-                <h2 class="vnutorneNadpis">Multifunkčná hala</h2>
+                <img class="hala" src="https://www.asbglassfloor.com/wp-content/uploads/newsletter_02_2017_04.jpg" alt="Nature" >
+                <h2 class="vnutorneNadpis"> <span class="gold"> Multifunkčná hala </span></h2>
                 <table class="cenahala">
                     <tr>
                         <th class="vnutorneTabulka" colspan="3">Hodinový prenájom*</th>
@@ -48,8 +48,8 @@
                 </p>
             </div>
             <div class="columndruhy">
-                <img class="hala" src="../obrazky/lezeckastena.png" alt="Snow" >
-                <h2 class="vnutorneNadpis">Lezecká stena</h2>
+                <img class="hala" src="../obrazky/stena.jpg" alt="Snow" >
+                <h2 class="vnutorneNadpis"> <span class="gold"> Lezecká stena </span> </h2>
                 <table class="cenalezenie">
                     <tr>
                         <th class="vnutorneTabulka" colspan="3">Hodinový prenájom</th>
@@ -97,8 +97,8 @@
                 </table>
             </div>
             <div class="columntreti">
-                <img class="hala" src="../obrazky/sqash.png" alt="Lights">
-                <h2 class="vnutorneNadpis">Squashové ihrisko</h2>
+                <img class="hala" src="https://www.athens2020.org/sites/default/files/styles/fullhd/public/disciplines-squash-racket.jpg?itok=MSX5XxGZ" alt="Lights">
+                <h2 class="vnutorneNadpis"> <span class="gold"> Squashové ihrisko </span> </h2>
                 <table class="cenasqash">
                     <tr>
                         <th class="vnutorneTabulka" colspan="3">Hodinový prenájom*</th>

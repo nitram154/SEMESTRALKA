@@ -16,35 +16,28 @@
 <ul class="Menu">
     <li>
         <a href="../phpWebSite/Informacie.php">
-            Informacie
+            INFORMACIE
         </a>
     </li>
     <li>
         <a href="../phpWebSite/Rezervacia.php">
-            Rezervacie
+            REZERVÁCIE
         </a>
     </li>
     <li>
         <a href="../phpWebSite/Kontakt.php">
-            Kontakt
+            KONTAKT
         </a>
     </li>
     <li>
-        <a>
-            Atrakcie
+        <a href="../phpWebSite/Vnutorne.php">
+            VNÚTORNÉ
         </a>
-        <ul>
-            <li>
-                <a href="../phpWebSite/Vnutorne.php">
-                    Vnútorné
-                </a>
-            </li>
-            <li>
-                <a href="../phpWebSite/Vonkajsie.php">
-                    Vonkajšie
-                </a>
-            </li>
-        </ul>
+    </li>
+    <li>
+        <a href="../phpWebSite/Vonkajsie.php">
+            VONKAJŠIE
+        </a>
     </li>
     <li>
         <a href="../phpWebSite/odhlasenie.php">

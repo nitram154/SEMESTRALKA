@@ -13,6 +13,8 @@ $priezvisko = $_POST['priezvisko'];
 $heslo = $_POST['heslo'];
 
 
+
+
 if ($storage->kontrolaUzivatel($_POST['email'])==true){
     $response_array['existuje'] = 'error';
 }else {

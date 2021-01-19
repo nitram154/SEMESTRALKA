@@ -11,7 +11,16 @@ $storage = new DBStorage();
 
 
 $zaznam = $_GET["id"];
+?>
 
+
+<div class="marginUpravit"></div>
+
+
+
+
+
+<?php
 
 foreach ($storage->LoadOne($zaznam) as $Atrakcie) {
 
