@@ -1,9 +1,9 @@
 <?php include_once "MenuBar.php" ?>
         <div>
-            <img class="informaciefoto" src="./obrazky/informaciefoto.jpg" alt="Chata">
+            <img class="informaciefoto" src="../obrazky/informaciefoto.jpg" alt="Chata">
         </div>
         <h1 class="informacieNadpis">
-            Športové centrum
+            EnjoyMent centrum
         </h1>
         <div class="kontajner">
             <div class="informaciePopis">
@@ -17,17 +17,17 @@
             </div>
             <div class="ponuka">
                 <div class="informacieText">
-                    <img class="fajka" src="./obrazky/fajka.png" alt="check icon">
+                    <img class="fajka" src="../obrazky/fajka.png" alt="check icon">
                     Lezecká stena <br>
-                    <img class="fajka" src="./obrazky/fajka.png" alt="check icon">
+                    <img class="fajka" src="../obrazky/fajka.png" alt="check icon">
                     Bouldering <br>
-                    <img class="fajka" src="./obrazky/fajka.png" alt="check icon">
+                    <img class="fajka" src="../obrazky/fajka.png" alt="check icon">
                     Multifunkčné ihrisko<br>
-                    <img class="fajka" src="./obrazky/fajka.png" alt="check icon">
+                    <img class="fajka" src="../obrazky/fajka.png" alt="check icon">
                     Beach ihrisko<br>
-                    <img class="fajka" src="./obrazky/fajka.png" alt="check icon">
+                    <img class="fajka" src="../obrazky/fajka.png" alt="check icon">
                     Tenisový kurt<br>
-                    <img class="fajka" src="./obrazky/fajka.png" alt="check icon">
+                    <img class="fajka" src="../obrazky/fajka.png" alt="check icon">
                     Opičia dráha<br>
                 </div>
             </div>

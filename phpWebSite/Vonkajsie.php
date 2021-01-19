@@ -2,7 +2,7 @@
 
         <div class="vonkajsieatrakcie">
             <div class="rowprvy">
-                <img class="obrleft" src="./obrazky/beach.png" alt="Nature" >
+                <img class="obrleft" src="../obrazky/beach.png" alt="Nature" >
                 <div class="sitetext">
                     <h2 class="beach">Beach ihrisko</h2>
                     <p class="textbeach">
@@ -12,7 +12,7 @@
                 </div>
             </div>
             <div class="rowdruhy">
-                <img class="obrright" src="./obrazky/draha.png" alt="Snow" >
+                <img class="obrright" src="../obrazky/draha.png" alt="Snow" >
                 <div class="sitetext">
                     <h2 class="draha">Opičia dráha</h2>
                     <p class="textopica">
@@ -23,7 +23,7 @@
                 </div>
             </div>
             <div class="rowtreti">
-                <img class="obrdown" src="./obrazky/tenis.png" alt="Lights">
+                <img class="obrdown" src="../obrazky/tenis.png" alt="Lights">
                 <div class="sitetext">
                     <h2 class="tenis">Tenisový kurt</h2>
                     <p class="texttenis">

@@ -1,7 +1,7 @@
 <?php include_once "MenuBar.php" ?>
         <div class="obrazky">
             <div class="columnprvy">
-                <img class="hala" src="./obrazky/hala.png" alt="Nature" >
+                <img class="hala" src="../obrazky/hala.png" alt="Nature" >
                 <h2 class="vnutorneNadpis">Multifunkčná hala</h2>
                 <table class="cenahala">
                     <tr>
@@ -48,7 +48,7 @@
                 </p>
             </div>
             <div class="columndruhy">
-                <img class="hala" src="./obrazky/lezeckastena.png" alt="Snow" >
+                <img class="hala" src="../obrazky/lezeckastena.png" alt="Snow" >
                 <h2 class="vnutorneNadpis">Lezecká stena</h2>
                 <table class="cenalezenie">
                     <tr>
@@ -97,7 +97,7 @@
                 </table>
             </div>
             <div class="columntreti">
-                <img class="hala" src="./obrazky/sqash.png" alt="Lights">
+                <img class="hala" src="../obrazky/sqash.png" alt="Lights">
                 <h2 class="vnutorneNadpis">Squashové ihrisko</h2>
                 <table class="cenasqash">
                     <tr>

@@ -2,16 +2,16 @@
 
 session_start();
 
-require "DBStorage.php";
-require "Uzivatelia.php";
+require "../phpClass/DBStorage.php";
+require "../phpClass/Uzivatelia.php";
 
 $storage = new DBStorage();
 
 if (isset($_POST['email'], $_POST['heslo'])) {
-    if ($storage->Prihlasenie($_POST['email'], $_POST['heslo'] ) == true){
+    if ($storage->Prihlasenie($_POST['email'], $_POST['heslo']) == true) {
         $_SESSION['uzivatel'] = $_POST['email'];
 
-        header('Location: http://localhost:63342/SEMESTRALKA/Informacie.php');
+        header('Location: http://localhost:63342/SEMESTRALKA/phpWebSite/Informacie.php');
     }
 }
 
@@ -22,7 +22,7 @@ if (isset($_POST['email'], $_POST['heslo'])) {
     <div class="prihlasenieForm">
 
         <form method="post">
-            <div class="prihlasenieBackround" id="">
+            <div class="prihlasenieBackround">
                 <label for="email"><b>Email</b></label><br>
                 <div class="input-container">
 
@@ -39,17 +39,20 @@ if (isset($_POST['email'], $_POST['heslo'])) {
                            value=""
                            required><br>
                 </div>
-        </form>
-                <div class="input-container">
-                    <button type="submit" value="Submit" class="btn">Prihlásiť</button>
-                    <button onclick="window.location='registracia.php'" class="btn">Registrácia</button>
-                </div>
-            </div>
 
+
+            </div>
+            <div class="input-container">
+                <button type="submit" value="Submit" class="btn">Prihlásiť</button>
+                <button onclick="window.location='registracia.php'" class="btn">Registrácia</button>
+            </div>
+        </form>
     </div>
-    <div class="prihlasenieKontajnerObr">
-        <img class="prihlasenieObr" src="./obrazky/prihlasenie.png" alt="sport">
-    </div>
+
+</div>
+<div class="prihlasenieKontajnerObr">
+    <img class="prihlasenieObr" src="../obrazky/prihlasenie.png" alt="sport">
+</div>
 
 
 </body>

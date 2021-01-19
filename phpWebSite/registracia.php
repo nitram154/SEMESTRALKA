@@ -1,23 +1,12 @@
-<?php include_once "MenuBar.php";
+<?php include_once "MenuBar.php"; ?>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<?php
 
-require "DBStorage.php";
-require "Uzivatelia.php";
+require "../phpClass/DBStorage.php";
+require "../phpClass/Uzivatelia.php";
 
 
 $storage = new DBStorage();
-
-
-if (isset($_POST['email'], $_POST['meno'], $_POST['priezvisko'], $_POST['heslo'])) {
-
-    $storage->SaveUzivatel(new Uzivatelia($_POST['email'], $_POST['meno'], $_POST['priezvisko'], $storage->saltedHash($_POST['email'], $_POST['heslo'])), $_POST['email']);
-//    if ($storage->SaveUzivatel(new Uzivatelia($_POST['email'], $_POST['meno'], $_POST['priezvisko'], $storage->saltedHash($_POST['email'], $_POST['heslo'])), $_POST['email']) == true) {
-//        echo '<script type="text/javascript">';
-//        echo 'window.location.href = "Prihlasenie.php";';
-//        echo 'alert("Užívateľ so zadaným emailom už existuje!");';
-//        echo '</script>';
-//    }
-
-}
 
 ?>
 
@@ -25,7 +14,7 @@ if (isset($_POST['email'], $_POST['meno'], $_POST['priezvisko'], $_POST['heslo']
     <div class="prihlasenieForm">
 
         <form method="post">
-            <div class="prihlasenieBackround" id="">
+            <div class="prihlasenieBackround">
                 <label for="email"><b>Email</b></label><br>
                 <div class="input-container">
 
@@ -59,16 +48,23 @@ if (isset($_POST['email'], $_POST['meno'], $_POST['priezvisko'], $_POST['heslo']
                 </div>
 
                 <div class="input-container">
-                    <button type="submit" value="Submit" class="btn">Registrovať</button>
+                    <button type="button" id="submit" value="Submit" class="btn">Registrovať</button>
                     <button onclick="window.location='prihlasenie.php'" class="btn">Zrušiť</button>
+                    <button onclick="window.location='prihlasenie.php'" class="btn">Prihlásenie</button>
                 </div>
             </div>
         </form>
     </div>
     <div class="prihlasenieKontajnerObr">
-        <img class="prihlasenieObr" src="./obrazky/prihlasenie.png" alt="sport">
+        <img class="prihlasenieObr" src="../obrazky/prihlasenie.png" alt="sport">
     </div>
 </div>
+
+
+<script>
+
+</script>
+
 
 </body>
 </html>

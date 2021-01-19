@@ -1,8 +1,8 @@
 <?php include_once "MenuBar.php" ?>
 
 <?php
-require "DBStorage.php";
-require "Spravy.php";
+require "../phpClass/DBStorage.php";
+require "../phpClass/Spravy.php";
 
 
 $storage = new DBStorage();

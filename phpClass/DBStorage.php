@@ -34,7 +34,7 @@ class DBStorage
         $r = $this->pdo->query("SELECT * FROM atrakcie WHERE emailUserFK = '$param'");
 
         foreach ($r as $item) {
-            $result[] = new Atrakcie($item['id'],$item['fname'], $item['lname'], $item['atrakcie'], $item['Datum'], $item['cas'], $item['TelCislo'],$item['emailUserFK']);
+            $result[] = new Atrakcie($item['id'], $item['fname'], $item['lname'], $item['atrakcie'], $item['Datum'], $item['cas'], $item['TelCislo'], $item['emailUserFK']);
 
         }
 
@@ -52,12 +52,12 @@ class DBStorage
 
     }
 
-    public function Update($id,$name, $lname, $atrakcie, $datum, $cas, $tel)
+    public function Update($id, $name, $lname, $atrakcie, $datum, $cas, $tel)
     {
 
         $this->pdo->query("UPDATE atrakcie SET fname='$name', lname='$lname', atrakcie='$atrakcie', Datum='$datum', cas='$cas', TelCislo='$tel' WHERE id=$id");
 
-        header('Location: http://localhost:63342/SEMESTRALKA/Rezervacia.php');
+        header('Location: http://localhost:63342/SEMESTRALKA/phpWebSite/Rezervacia.php');
 
     }
 
@@ -66,41 +66,52 @@ class DBStorage
         $result = [];
         $r = $this->pdo->query("SELECT * FROM atrakcie WHERE id=$id");
         foreach ($r as $item) {
-            $result[] = new Atrakcie($item['id'],$item['fname'], $item['lname'], $item['atrakcie'], $item['Datum'], $item['cas'], $item['TelCislo'], $item['emailUserFK']);
+            $result[] = new Atrakcie($item['id'], $item['fname'], $item['lname'], $item['atrakcie'], $item['Datum'], $item['cas'], $item['TelCislo'], $item['emailUserFK']);
         }
         return $result;
     }
 
-    public function SaveUzivatel(Uzivatelia $param,$email)
+    public function SaveUzivatel(Uzivatelia $param)
     {
-        $uzivatel = $this->pdo->query("SELECT email FROM uzivatalia WHERE email=$email");
-        //$uzivatel->execute(array(':email' => $email));
 
-        //$uzivatelPom = $uzivatel ->fetchAll();
+        $statement = $this->pdo->prepare("INSERT INTO uzivatelia (email, meno,priezvisko,heslo) value (?,?,?,?)");
+        $statement->execute([$param->getEmail(), $param->getMeno(), $param->getPriezvisko(), $param->getHeslo()]);
 
-        if (empty($uzivatel)){
-            $statement = $this->pdo->prepare("INSERT INTO uzivatelia (email, meno,priezvisko,heslo) value (?,?,?,?)");
-            $statement->execute([$param->getEmail(), $param->getMeno(), $param->getPriezvisko(),$param->getHeslo()]);
-
-        }else {
-            return false;
-        }
 
     }
 
-    public function saltedHash($email,$heslo){
-        $upravenieHash = $email."gumene cukriky su super".$heslo;
+    public function kontrolaUzivatel($param)
+    {
+        $user = $this->pdo->prepare("SELECT email FROM uzivatelia WHERE email = :param");
+        $user->execute(array(
+            ':param' => $param
+        ));
+
+        $existingUser = $user->fetchAll();
+
+        if (empty($existingUser)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    public function saltedHash($email, $heslo)
+    {
+        $upravenieHash = $email . "gumene cukriky su super" . $heslo;
         $hash = sha1($upravenieHash);
         return $hash;
     }
 
-    public function Prihlasenie($email,$heslo){
 
-        $uzivatel = $this->pdo->prepare ("SELECT count(heslo) as checkUser FROM uzivatelia WHERE heslo= :hash");
-        $uzivatel ->execute(array(':hash'=>$this->saltedHash($email,$heslo)));
+    public function Prihlasenie($email, $heslo)
+    {
+
+        $uzivatel = $this->pdo->prepare("SELECT count(heslo) as checkUser FROM uzivatelia WHERE heslo= :hash");
+        $uzivatel->execute(array(':hash' => $this->saltedHash($email, $heslo)));
 
         $uzivatelFetch = $uzivatel->fetch(PDO::FETCH_ASSOC);
-        if ($uzivatelFetch['checkUser'] == 1){
+        if ($uzivatelFetch['checkUser'] == 1) {
             return true;
         }
         return false;

@@ -1,4 +1,4 @@
-<?php include_once "MenuBar.php";
+<?php include_once "../phpWebSite/MenuBar.php";
 session_start();
 
 function formular($id = 0, $fname = "", $lname = "", $atrakcie = "", $datum = "", $cas = "", $tel = "")
@@ -60,7 +60,7 @@ function formular($id = 0, $fname = "", $lname = "", $atrakcie = "", $datum = ""
                 <label for="TelCislo">Telefónne číslo:</label><br>
                 <input type="tel" id="TelCislo" name="TelCislo" placeholder="09YYXXXXXX" pattern="09[0-9]{8}"
                        value="<?php echo $tel ?>" required><br><br>
-                <input type="submit" value="Rezervovať" class="odoslanie">
+                <input type="submit" id="submitRezervation" value="Rezervovať" class="odoslanie">
 
 
             </form>
