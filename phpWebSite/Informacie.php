@@ -7,7 +7,6 @@
         ŠPORTUJÚ
         <div class="gold">NAJLEPŠÍ</div>
 
-
         <div class="informaciePopis"><br>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ipsum sapien, lobortis hendrerit laoreet a,
             mattis at ex.
@@ -19,41 +18,16 @@
             consectetur. Duis lobortis malesuada justo, ut tempor orci ultrices ut.
             In sit amet odio quis nunc interdum vehicula non id enim.
         </div>
-
     </div>
-
 
     <div>
-
-        <img class="cvicenie" src="https://www.nrgfitness.cz/wp-content/uploads/2020/10/DSC01110-1800x1080.jpg" alt="cvicenie">
-
+        <img class="cvicenie" src="../obrazky/infromacieObr.jpg" alt="cvicenie">
     </div>
-
-
-
 
 </div>
 
 
 
-
-<!--<div class="kontajner">-->
-<!--    <div class="informaciePopis">-->
-<!--        <h2>-->
-<!--            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ipsum sapien, lobortis hendrerit laoreet a,-->
-<!--            mattis at ex.-->
-<!--            Phasellus vitae nibh sed libero condimentum sollicitudin in eleifend odio. Nulla sagittis massa quis sem-->
-<!--            elementum, ut condimentum lectus pellentesque.-->
-<!--            Mauris eu vulputate ligula. Suspendisse non turpis id leo porta luctus et ac orci. Etiam porttitor auctor-->
-<!--            vehicula. Nulla elementum diam nulla, ac volutpat est eleifend eget.-->
-<!--            Vestibulum risus urna, tempor sed est dictum, elementum lobortis libero. Fusce condimentum leo et vestibulum-->
-<!--            consectetur. Duis lobortis malesuada justo, ut tempor orci ultrices ut.-->
-<!--            In sit amet odio quis nunc interdum vehicula non id enim.-->
-<!--        </h2>-->
-<!--    </div>-->
-<!---->
-<!---->
-<!--</div>-->
 
 
 <div class="dane">

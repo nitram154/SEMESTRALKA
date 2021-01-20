@@ -47,7 +47,6 @@
 </ul>
 <div class="mobile-container">
 
-    <!-- Top Navigation Menu -->
     <div class="topnav">
         <a class="active"></a>
         <div id="myLinks">

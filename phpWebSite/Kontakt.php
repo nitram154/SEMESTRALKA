@@ -10,12 +10,20 @@ $storage = new DBStorage();
 
 if (isset($_POST['meno'], $_POST['email'], $_POST['text'])) {
 
-    $storage->SaveMsg(new Spravy($_GET['id'], $_POST['meno'], $_POST['email'], $_POST['text']));
+    if ($_POST['meno'] != "" && $_POST['email'] != "" && $_POST['text'] != "") {
 
-    echo '<script type="text/javascript">';
-    echo 'window.location.href = "Kontakt.php";';
-    echo 'alert("Sprava bola odoslaná!");';
-    echo '</script>';
+
+        $storage->SaveMsg(new Spravy($_GET['id'], $_POST['meno'], $_POST['email'], $_POST['text']));
+
+        echo '<script type="text/javascript">';
+        echo 'window.location.href = "Kontakt.php";';
+        echo 'alert("Sprava bola odoslaná!");';
+        echo '</script>';
+    } else {
+        echo '<script type="text/javascript">';
+        echo 'alert("Všetky polia musia byť vyplnené!");';
+        echo '</script>';
+    }
 }
 
 
@@ -27,23 +35,17 @@ if (isset($_POST['meno'], $_POST['email'], $_POST['text'])) {
         <span class="gold">SPOJME</span> SA <br>
 
         <div class="informaciePopis">
-       <span class="gold">  Adresa:</span>  Senická 626, Liptovský Mikuláš<br><br>
-        <span class="gold"> Email:</span>  sport.centrum@email.sk <br><br>
-       <span class="gold">  Mobil:</span>  +421907261622 <br><br>
+            <span class="gold">  Adresa:</span> Senická 626, Liptovský Mikuláš<br><br>
+            <span class="gold"> Email:</span> sport.centrum@email.sk <br><br>
+            <span class="gold">  Mobil:</span> +421907261622 <br><br>
         </div>
-
-
     </div>
-
 
     <div>
-
         <img class="cvicenie"
-             src="https://images.adsttc.com/media/images/5011/ef56/28ba/0d5f/4c00/054f/large_jpg/stringio.jpg?1414009105"
-             alt="cvicenie">
-
+             src="../obrazky/kontaktObr.jpg"
+             alt="budova">
     </div>
-
 
 </div>
 
@@ -91,13 +93,13 @@ if (isset($_POST['meno'], $_POST['email'], $_POST['text'])) {
             <label for="meno">Vaše meno</label>
             <input class="kontaktTextLabel" id="meno" type="text" placeholder="Meno.." value="" name="meno" required>
             <label for="email">Váš email</label>
-            <input class="kontaktTextLabel" id="email" name="email" type="email" placeholder="Email.." value="" required>
+            <input class="kontaktTextLabel" id="email" name="email" type="email" placeholder="Email.." value=""
+                   required>
             <label for="text">Správa</label>
             <input class="kontaktTextLabel" id="text" name="text" type="text" placeholder="Tu môžte napísať odkaz .."
                    value="" required>
             <button class="btnOdoslat" type="submit" value="Submit"> Odoslať</button>
         </form>
-
     </div>
 </div>
 

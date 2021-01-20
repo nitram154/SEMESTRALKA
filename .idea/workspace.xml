@@ -3,13 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="e116ffc2-d103-438e-98c0-67c6217be2c6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaScript/ajax.js" beforeDir="false" afterPath="$PROJECT_DIR$/javaScript/ajax.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/postRegistrationAjax.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/postRegistrationAjax.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obrazky/beach.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obrazky/draha.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obrazky/tenis.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpWebSite/Informacie.php" beforeDir="false" afterPath="$PROJECT_DIR$/phpWebSite/Informacie.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/phpWebSite/Kontakt.php" beforeDir="false" afterPath="$PROJECT_DIR$/phpWebSite/Kontakt.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/phpWebSite/MenuBar.php" beforeDir="false" afterPath="$PROJECT_DIR$/phpWebSite/MenuBar.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/phpWebSite/Rezervacia.php" beforeDir="false" afterPath="$PROJECT_DIR$/phpWebSite/Rezervacia.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpWebSite/Vnutorne.php" beforeDir="false" afterPath="$PROJECT_DIR$/phpWebSite/Vnutorne.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpWebSite/Vonkajsie.php" beforeDir="false" afterPath="$PROJECT_DIR$/phpWebSite/Vonkajsie.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/phpWebSite/prihlasenie.php" beforeDir="false" afterPath="$PROJECT_DIR$/phpWebSite/prihlasenie.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/Css.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/Css.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpWebSite/registracia.php" beforeDir="false" afterPath="$PROJECT_DIR$/phpWebSite/registracia.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +108,8 @@
       <workItem from="1610567752193" duration="589000" />
       <workItem from="1610711045073" duration="25364000" />
       <workItem from="1610973751663" duration="11279000" />
-      <workItem from="1611062732521" duration="36264000" />
+      <workItem from="1611062732521" duration="36445000" />
+      <workItem from="1611134873587" duration="2354000" />
     </task>
     <task id="LOCAL-00001" summary="Verzia 1">
       <created>1603186867716</created>
@@ -190,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611099878417</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="upload">
+      <created>1611103532210</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1611103532210</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,11 +248,11 @@
     <state x="-1296" y="201" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1605445682674" />
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1610558022299" />
     <state x="624" y="201" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1611063932701" />
-    <state x="468" y="0" key="CommitChangelistDialog2" timestamp="1611099877149">
+    <state x="468" y="0" key="CommitChangelistDialog2" timestamp="1611103531140">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="-1335" y="97" key="CommitChangelistDialog2/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1603187048697" />
-    <state x="468" y="0" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1611099877149" />
+    <state x="468" y="0" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1611103531140" />
     <state x="468" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1610738067597" />
     <state x="585" y="0" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1611067312659" />
     <state x="1246" y="179" width="440" height="630" key="FileChooserDialogImpl" timestamp="1611063873508">
@@ -316,11 +328,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="529" height="446" key="SwitcherDM/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1611096163119" />
-    <state x="442" y="200" key="Vcs.Push.Dialog.v2" timestamp="1611099879577">
+    <state x="442" y="200" key="Vcs.Push.Dialog.v2" timestamp="1611103534027">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="-1368" y="252" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1603187051657" />
-    <state x="442" y="200" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1611099879577" />
+    <state x="442" y="200" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1611103534027" />
     <state x="442" y="200" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1610738078497" />
     <state x="553" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1611067316122" />
     <state x="668" y="289" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1605346442668">

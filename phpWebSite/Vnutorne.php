@@ -1,7 +1,7 @@
 <?php include_once "MenuBar.php" ?>
         <div class="obrazky">
             <div class="columnprvy">
-                <img class="hala" src="https://www.asbglassfloor.com/wp-content/uploads/newsletter_02_2017_04.jpg" alt="Nature" >
+                <img class="hala" src="../obrazky/vnutorneHalaObr.jpg" alt="Hala" >
                 <h2 class="vnutorneNadpis"> <span class="gold"> Multifunkčná hala </span></h2>
                 <table class="cenahala">
                     <tr>
@@ -48,7 +48,7 @@
                 </p>
             </div>
             <div class="columndruhy">
-                <img class="hala" src="../obrazky/stena.jpg" alt="Snow" >
+                <img class="hala" src="../obrazky/vnutorneLezenieObr.jpg" alt="lezenie" >
                 <h2 class="vnutorneNadpis"> <span class="gold"> Lezecká stena </span> </h2>
                 <table class="cenalezenie">
                     <tr>
@@ -97,7 +97,7 @@
                 </table>
             </div>
             <div class="columntreti">
-                <img class="hala" src="https://www.athens2020.org/sites/default/files/styles/fullhd/public/disciplines-squash-racket.jpg?itok=MSX5XxGZ" alt="Lights">
+                <img class="hala" src="../obrazky/vnutorneSquashObr.jpg" alt="Squash">
                 <h2 class="vnutorneNadpis"> <span class="gold"> Squashové ihrisko </span> </h2>
                 <table class="cenasqash">
                     <tr>
