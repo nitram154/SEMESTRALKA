@@ -45,7 +45,9 @@ $(document).ready(function () {
                     $("#heslo").val("");
                 }else if (result.existuje === 'error'){
                     alert('Užívateľ so zadaným emailom už existuje!');
-                    $("#heslo").val("");
+                }else if (result.existuje === 'undefined'){
+                    console.log(result.existuje);
+                    alert('Vyplnte všetky polia!');
                 }
             },
 

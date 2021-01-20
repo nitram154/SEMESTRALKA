@@ -104,15 +104,11 @@ li a {
 
 /* Informacie */
 
-
 .informacieObalovac{
     display: flex;
     justify-content: space-around;
     margin-top: 10%;
 }
-
-
-
 
 .informacieNadpis{
     color: white;
@@ -130,15 +126,12 @@ li a {
     width:70%;
     margin-left: 20%;
     box-shadow:  15px 15px #645200;
-
-
 }
 
 .informaciePopis{
   font-size: 32px;
     font-weight:normal;
     text-align: justify;
-
 }
 
 .dane{
@@ -150,6 +143,7 @@ li a {
     font-size: 20px;
     transform: translate(-50%, 50%);
 }
+
 .daneText{
     padding: 5px;
     margin-top: unset;
@@ -164,25 +158,23 @@ li a {
         font-size: 20px;
     }
 }
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 800px) {
 
-    .kontajner{
-        display: block;
-    }
-    .informaciePopis{
-        width: 80%;
-        margin-left: 10%;
-        font-size: 10px;
-    }
-    .ponuka{
-        margin-left: 10%;
-    }
-    .informacieText{
-        font-size: 25px;
-    }
-.informaciefoto{
-    height: auto;
+.informacieObalovac{
+    display: block;
 }
+
+    .cvicenie{
+        margin-top: 2em;
+        margin-left: 2em;
+        width: 90%;
+        box-shadow: none;
+    }
+
+    .informaciePopis{
+        text-align: unset;
+        font-size: 18px;
+    }
 }
 
 
@@ -297,19 +289,6 @@ li a {
     width: 100%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .kontajnerNacitanie{
     width: 100%;
     margin-top: 5px;
@@ -328,7 +307,6 @@ li a {
 
 }
 .prvavaTlacidla{
-    /*text-align: right;*/
     padding-left: 2%;
 }
 .cssTlacidla{
@@ -355,7 +333,6 @@ li a {
 }
 
 
-
 .prihlasenieNeprihlasenyKontajner{
     display: flex;
     justify-content: center;
@@ -366,7 +343,7 @@ li a {
 
 .prihlasenieNeprihlaseny{
     display: block;
-    width: 50%;
+    width: 60%;
     font-weight: bold;
     color: white;
     text-align: center;
@@ -376,6 +353,27 @@ li a {
 .aZrus{
     text-decoration: none;
 }
+.informacieNadpisRezervacia{
+    color: white;
+    font-size: 100px;
+    width:70%;
+    margin-left: 7%;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .informacieNadpisRezervacia{
+        font-size: 30px;
+    }
+
+    .formRezervacia{
+       margin-left: 2em;
+
+    }
+
+}
+
 /* Vnutorne */
 
 .hala{
@@ -517,6 +515,13 @@ li a {
 
 /* Prihlasenie */
 
+.informaciePopisPrihlasenie{
+
+    font-size: 32px;
+    font-weight:normal;
+    text-align: justify;
+}
+
 .input-container {
     display: flex;
     width: 100%;
@@ -574,21 +579,26 @@ li a {
 
 }
 
+.cviceniePrihlasenie{
+    width:70%;
+    margin-left: 20%;
+    box-shadow:  15px 15px #645200;
+}
+
 @media only screen and (max-width: 600px) {
 
-    .prihlasenieKontajner{
-        display: block;
+  .btn{
+      margin: 0;
+      font-size: 8px;
+      width: 100%;
+  }
 
+    .cviceniePrihlasenie{
+        width:100%;
+      margin: 0;
+        box-shadow:  none;
     }
 
-    .prihlasenieForm{
-        width: 100%;
-    }
-
-    .prihlasenieObr{
-        width: 100%;
-        height: 200px;
-    }
 
 }
 
@@ -606,3 +616,12 @@ li a {
 
 }
 
+@media only screen and (max-width: 600px) {
+
+    .btnReg{
+        margin: 0;
+        font-size: 8px;
+        width: 100%;
+    }
+
+}

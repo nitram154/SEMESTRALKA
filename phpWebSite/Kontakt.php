@@ -89,12 +89,12 @@ if (isset($_POST['meno'], $_POST['email'], $_POST['text'])) {
         <h3>Napíšte nám ...</h3>
         <form method="post">
             <label for="meno">Vaše meno</label>
-            <input class="kontaktTextLabel" id="meno" type="text" placeholder="Meno.." value="" name="meno">
+            <input class="kontaktTextLabel" id="meno" type="text" placeholder="Meno.." value="" name="meno" required>
             <label for="email">Váš email</label>
-            <input class="kontaktTextLabel" id="email" name="email" type="email" placeholder="Email.." value="">
+            <input class="kontaktTextLabel" id="email" name="email" type="email" placeholder="Email.." value="" required>
             <label for="text">Správa</label>
             <input class="kontaktTextLabel" id="text" name="text" type="text" placeholder="Tu môžte napísať odkaz .."
-                   value="">
+                   value="" required>
             <button class="btnOdoslat" type="submit" value="Submit"> Odoslať</button>
         </form>
 

@@ -14,6 +14,8 @@ $heslo = $_POST['heslo'];
 
 
 
+if ($email != "" && $meno != "" && $priezvisko != "" && $heslo != ""){
+
 
 if ($storage->kontrolaUzivatel($_POST['email'])==true){
     $response_array['existuje'] = 'error';
@@ -24,3 +26,8 @@ if ($storage->kontrolaUzivatel($_POST['email'])==true){
 
 echo json_encode($response_array);
 
+} else{
+
+    $response_array['existuje'] = 'undefined';
+    echo json_encode($response_array);
+}

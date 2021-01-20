@@ -25,7 +25,7 @@ if (isset($_SESSION['uzivatel'])) {
 
     <div class="informacieObalovac">
 
-        <div class="informacieNadpis">
+        <div class="informacieNadpisRezervacia">
             <span class="gold">VYTVORTE </span> SI SVOJU <br>
 
             <span class="gold"> REZERVÁCIU </span>

@@ -56,6 +56,9 @@
             <a href="Kontakt.php">Kontakt</a>
             <a href="Vnutorne.php">Vnútorné atrakcie</a>
             <a href="Vonkajsie.php">Vonkajšie atrakcie</a>
+            <a href="../phpWebSite/odhlasenie.php">
+                <i class = "fa fa-power-off"></i>
+            </a>
         </div>
         <a href="javascript:void(0);" class="icon" onclick="dropMenu()">
             <i class="fa fa-bars"></i>

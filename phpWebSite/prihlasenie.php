@@ -8,12 +8,21 @@ require "../phpClass/Uzivatelia.php";
 $storage = new DBStorage();
 
 if (isset($_POST['email'], $_POST['heslo'])) {
+
     if ($storage->Prihlasenie($_POST['email'], $_POST['heslo']) == true) {
         $_SESSION['uzivatel'] = $_POST['email'];
 
         header('Location: http://localhost:63342/SEMESTRALKA/phpWebSite/Informacie.php');
+    } else {
+
+
+        echo '<script type="text/javascript">';
+        echo 'window.location.href = "prihlasenie.php";';
+        echo 'alert("Nesprávne meno alebo heslo!");';
+        echo '</script>';
     }
 }
+
 
 
 ?>
@@ -25,7 +34,7 @@ if (isset($_POST['email'], $_POST['heslo'])) {
 
 
 
-        <div class="informaciePopis">
+        <div class="informaciePopisPrihlasenie">
             <div class="prihlasenieKontajner">
                 <div class="prihlasenieForm">
 
@@ -68,7 +77,7 @@ if (isset($_POST['email'], $_POST['heslo'])) {
 
     <div>
 
-        <img class="cvicenie"
+        <img class="cviceniePrihlasenie"
              src="https://scontent-lht6-1.cdninstagram.com/v/t51.29350-15/129680862_116796276834475_6841929275295401208_n.jpg?_nc_cat=103&ccb=2&_nc_sid=8ae9d6&_nc_ohc=pHDofQGmUEQAX_6UdX7&_nc_ht=scontent-lht6-1.cdninstagram.com&oh=9fc64fa77a82a3332e289a88ad377ff9&oe=602CF7BC"
              alt="cvicenie">
 
